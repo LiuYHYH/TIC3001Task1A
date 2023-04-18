@@ -1,0 +1,10 @@
+1A 
+1.1 docker build . -t my-app/node-web-app
+docker run -p 3000:8080 -d my-app/node-web-app
+docker ps
+docker exec -it <container id> /bin/bash
+
+1.2 docker build . -t nginxsample/node-web-app
+docker run -p 3001:80 -d nginxsample/node-web-app
+
+1.3 docker-compose up
